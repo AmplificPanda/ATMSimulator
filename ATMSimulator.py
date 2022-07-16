@@ -41,22 +41,18 @@ def Deposit():
 
 #check deposit function
 def CheckDeposit(depAmount):
-    Valid=True
     if (depAmount<20 or depAmount>200):
-        Valid=False
         print("error,invalid deposit amount!")
         Menu()
-        return Valid
+        return False
 
     else:
-        Valid==True
-        return Valid
+        return True
 
     
 #check withdraw function
 def CheckWithdrawal(drawedAmount):
     global Balance
-    canWithdraw=True
     if (drawedAmount<20 or drawedAmount>Balance):
      print("error invalid withdrawal amount!")
      Menu()
