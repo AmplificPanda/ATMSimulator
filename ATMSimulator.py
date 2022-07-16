@@ -43,7 +43,7 @@ def Deposit():
 def CheckDeposit(depAmount):
     Valid=True
     if (depAmount<20 or depAmount>200):
-        Valid==False
+        Valid=False
         print("error,invalid deposit amount!")
         Menu()
         return Valid
